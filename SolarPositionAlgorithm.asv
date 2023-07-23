@@ -27,6 +27,10 @@ now = string(current_date_time_utc, 'HH:mm:ss');
 r = datenum(sunrise);
 s = datenum(sunset);
 n = datenum(now);
+sss = [sunrise, sunset, now];
+str = [r, s, n];
+disp(str)
+disp(sss)
 if n > r && n < s
     disp('Diurnal:       day')
 else
