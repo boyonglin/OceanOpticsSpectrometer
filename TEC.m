@@ -1,9 +1,8 @@
-function [temperatureCelsius] = omniTemp(spectrometerIndex)
+function TEC(spectrometerIndex)
     % Connect the spectrometer
     import('com.oceanoptics.omnidriver.api.wrapper.Wrapper');
     wrapper = Wrapper();
     wrapper.openAllSpectrometers();
-    temperatureCelsius = NaN;
     % Reads the Printed Circuit Board Temperature
     if wrapper.isFeatureSupportedBoardTemperature(spectrometerIndex)
         boardTemperature = wrapper.getFeatureControllerBoardTemperature(spectrometerIndex);
@@ -30,5 +29,3 @@ function [temperatureCelsius] = omniTemp(spectrometerIndex)
     % Clean up
     wrapper.closeAllSpectrometers();
 end
-
-
