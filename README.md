@@ -1,2 +1,2 @@
-# OceanOpticsSpectrometer
- Spectrometer Viewer built with MATLAB App Designer
+# Omni Spectrometer
+Spectrometer Viewer built with MATLAB App Designer
