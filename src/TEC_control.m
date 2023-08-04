@@ -1,4 +1,4 @@
-function TEC(spectrometerIndex)
+function TEC_control(spectrometerIndex)
     % Connect the spectrometer
     import('com.oceanoptics.omnidriver.api.wrapper.Wrapper');
     wrapper = Wrapper();
