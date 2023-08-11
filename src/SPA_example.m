@@ -21,7 +21,7 @@ minute = parts(5);
 second = parts(6);
 
 [zenith, azimuth, sunrise, sunset] = spa(year, month, day, hour, minute, second, timezone, ...
-    longitude, latitude, elevation, pressure, temperature, slope, azm_rotation, 0);
+    longitude, latitude, elevation, pressure, temperature, slope, azm_rotation, 1);
 
 now = string(current_date_time_utc, 'HH:mm:ss');
 r = datenum(sunrise);
