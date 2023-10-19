@@ -1,2 +1,2 @@
 # Omni Spectrometer
-Spectrometer Viewer built with MATLAB App Designer
+QE Pro Spectrum Viewer built with MATLAB App Designer
